@@ -173,7 +173,7 @@ Base URL: `http://localhost:3000` (or your `PORT`).
 | GET | `/api/dashboard/category` | Totals by category and type |
 | GET | `/api/dashboard/recent` | Recent non-deleted records |
 | GET | `/api/dashboard/monthly` | Monthly buckets by type |
-| GET | `/api/dashboard/weekly` | ISO week buckets by type |
+
 
 ---
 
