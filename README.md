@@ -115,7 +115,7 @@ The API supports:
 | `PORT` | HTTP port | `3000` |
 | `NODE_ENV` | `development` or `production` | `development` |
 | `JWT_SECRET` | Secret for signing JWTs (**required**) | long random string |
-| `JWT_EXPIRES_IN` | Token lifetime | `1d` |
+| `JWT_EXPIRES_IN` | Token lifetime | `1h` |
 
 The server **exits on startup** if `JWT_SECRET` is missing.
 
