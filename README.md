@@ -130,7 +130,6 @@ The server **exits on startup** if `JWT_SECRET` is missing.
    Authorization: Bearer <token>
    ```
 
-There is **no** legacy “register without password” or “set password on existing email” behavior: email must be unique; login only works for registered users.
 
 ---
 
