@@ -38,7 +38,7 @@ The API supports:
 | User status | `active` / `inactive`; inactive users cannot use the API |
 | Financial records | Full CRUD; soft delete via `isDeleted` |
 | Filtering | `type`, `category`, `dateFrom`/`dateTo`, `search` |
-| Dashboard analytics | Summary, category totals, recent, monthly, **weekly** |
+| Dashboard analytics | Summary, category totals, recent, monthly |
 | Access control | JWT + route-level role checks; **no `x-role` header** (removed to prevent bypass) |
 | Validation | Body/query/param rules + centralized errors |
 | Persistence | MongoDB via `MONGO_URI` |
@@ -206,7 +206,7 @@ Role is taken **only** from the authenticated user document (JWT identifies the 
 
 - MongoDB is reachable at `MONGO_URI`.
 - JWT role reflects the user document; changing role in DB applies on next request (token may still carry old `role` claim but **`auth` middleware loads role from DB**).
-- Weekly aggregation uses MongoDB **`$isoWeek` / `$isoWeekYear`** (MongoDB 5+).
+- Monthly aggregation uses MongoDB $month and $year operators to group financial data.
 
 ---
 
