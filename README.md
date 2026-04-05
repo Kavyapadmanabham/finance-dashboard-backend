@@ -12,7 +12,7 @@ The API supports:
 
 - **Users** with roles `viewer`, `analyst`, `admin` and status `active` / `inactive`.
 - **Financial records** (income/expense) with filtering, pagination, and search.
-- **Dashboard endpoints** for totals, category breakdowns, recent activity, and **monthly + weekly** trends.
+- **Dashboard endpoints** for totals, category breakdowns, recent activity, and **monthly ** trends.
 - **Strict auth flow**: register → login → use `Authorization: Bearer <token>` on protected routes.
 
 ---
