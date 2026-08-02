@@ -219,6 +219,3 @@ Role is taken **only** from the authenticated user document (JWT identifies the 
 
 ---
 
-## License
-
-MIT
